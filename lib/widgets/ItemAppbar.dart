@@ -1,4 +1,5 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 
 class ItemAppbar extends StatefulWidget {
   const ItemAppbar({super.key});
@@ -10,6 +11,23 @@ class ItemAppbar extends StatefulWidget {
 class _ItemAppbarState extends State<ItemAppbar> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Container(
+      color: Colors.white,
+      padding: const EdgeInsets.all(
+        25,
+      ),
+      child: Row(
+        children: [
+          InkWell(
+            onTap: () {
+              Navigator.pop(context);
+            },
+            child: const Icon(
+              Icons.arrow_back,
+            ),
+          )
+        ],
+      ),
+    );
   }
 }
