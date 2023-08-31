@@ -1,5 +1,6 @@
 // Import necessary packages
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/pagages/ItemPage.dart';
 import 'package:flutter_application_1/pagages/cartPage.dart';
 import 'package:flutter_application_1/screan/home_page.dart'; // Import your custom screen
 
@@ -29,6 +30,7 @@ class MyApp extends StatelessWidget {
         "/": (context) =>
             const ShoppingApp(), // Define the default route to the ShoppingApp
         "cartPage": (context) => const CartPage(),
+        "itemPage": (context) => const ItemPages(),
       },
     );
   }
