@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/pagages/CartAppBar.dart';
 import 'package:flutter_application_1/widgets/CartItemSamples.dart';
+import 'package:flutter_application_1/widgets/cardbottomnav.dart';
 
 class CartPage extends StatefulWidget {
   const CartPage({super.key});
@@ -35,14 +36,57 @@ class _CartPageState extends State<CartPage> {
                 ),
               ),
             ),
-            child: const Column(
+            child: Column(
               children: <Widget>[
-                CartItemSamples(),
+                const CartItemSamples(),
+                Container(
+                  margin: const EdgeInsets.symmetric(
+                    vertical: 20,
+                    horizontal: 15,
+                  ),
+                  padding: const EdgeInsets.all(
+                    10,
+                  ),
+                  child: Row(
+                    children: <Widget>[
+                      Container(
+                        decoration: BoxDecoration(
+                          color: const Color(
+                            0xFF4C53A5,
+                          ),
+                          borderRadius: BorderRadius.circular(
+                            20,
+                          ),
+                        ),
+                        child: const Icon(
+                          Icons.add,
+                          color: Colors.white,
+                        ),
+                      ),
+                      const Padding(
+                        padding: EdgeInsets.symmetric(
+                          horizontal: 10,
+                        ),
+                        child: Text(
+                          'Add coupn code',
+                          style: TextStyle(
+                            color: Color(
+                              0xFF4C53A5,
+                            ),
+                            fontSize: 16,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      )
+                    ],
+                  ),
+                ),
               ],
             ),
           )
         ],
       ),
+      bottomNavigationBar: const CardBottomNav(),
     );
   }
 }
