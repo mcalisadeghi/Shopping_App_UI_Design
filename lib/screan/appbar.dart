@@ -23,14 +23,14 @@ class _HomePageAppBarState extends State<HomePageAppBar> {
       ),
       child: Row(
         children: [
-          Icon(
+          const Icon(
             Icons.sort,
             size: 30,
             color: Color(
               0xFF4C53A5,
             ),
           ),
-          Padding(
+          const Padding(
             padding: EdgeInsets.only(
               left: 20,
             ),
@@ -45,7 +45,7 @@ class _HomePageAppBarState extends State<HomePageAppBar> {
               ),
             ),
           ),
-          Spacer(), // Add flexible space to push the badge to the right
+          const Spacer(), // Add flexible space to push the badge to the right
           // Add a badge with a shopping bag icon and a notification count
           badges.Badge(
             badgeStyle: const BadgeStyle(
