@@ -1,7 +1,9 @@
-import 'package:badges/badges.dart';
+// Import necessary packages
+import 'package:badges/badges.dart'; // Import the badges package
 import 'package:flutter/material.dart';
 import 'package:badges/badges.dart' as badges;
 
+// Define a stateful widget for the app bar in the home page
 class HomePageAppBar extends StatefulWidget {
   const HomePageAppBar({super.key});
 
@@ -9,11 +11,13 @@ class HomePageAppBar extends StatefulWidget {
   State<HomePageAppBar> createState() => _HomePageAppBarState();
 }
 
+// Define the state for the HomePageAppBar widget
 class _HomePageAppBarState extends State<HomePageAppBar> {
   @override
   Widget build(BuildContext context) {
+    // Construct the app bar container
     return Container(
-      color: Colors.white,
+      color: Colors.white, // Set the background color
       padding: const EdgeInsets.all(
         25,
       ),
@@ -31,7 +35,7 @@ class _HomePageAppBarState extends State<HomePageAppBar> {
               left: 20,
             ),
             child: Text(
-              'DP shop',
+              'DP shop', // Display the app title
               style: TextStyle(
                 fontSize: 23,
                 fontWeight: FontWeight.bold,
@@ -41,24 +45,25 @@ class _HomePageAppBarState extends State<HomePageAppBar> {
               ),
             ),
           ),
-          Spacer(),
+          Spacer(), // Add flexible space to push the badge to the right
+          // Add a badge with a shopping bag icon and a notification count
           badges.Badge(
             badgeStyle: const BadgeStyle(
-              badgeColor: Colors.red,
+              badgeColor: Colors.red, // Set badge background color
               padding: EdgeInsets.all(
                 7,
               ),
             ),
             badgeContent: const Text(
-              '3',
+              '3', // Display the notification count
               style: TextStyle(
-                color: Colors.white,
+                color: Colors.white, // Set the text color
               ),
             ),
             child: InkWell(
               onTap: () {},
               child: const Icon(
-                Icons.shopping_bag_outlined,
+                Icons.shopping_bag_outlined, // Display the shopping bag icon
                 size: 32,
                 color: Color(
                   0xFF4C53A5,
