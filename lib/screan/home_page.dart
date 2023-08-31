@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_1/screan/appbar.dart';
 import 'package:flutter_application_1/widgets/CategoriesWidget.dart';
 import 'package:flutter_application_1/widgets/item_widget.dart'; // Import your custom app bar
+import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 
 // Define a stateful widget for the shopping app
 class ShoppingApp extends StatefulWidget {
@@ -40,7 +41,7 @@ class _ShoppingAppState extends State<ShoppingApp> {
               ),
             ),
             child: Column(
-              children: [
+              children: <Widget>[
                 Container(
                   margin: const EdgeInsets.symmetric(
                     horizontal: 15,
@@ -100,7 +101,11 @@ class _ShoppingAppState extends State<ShoppingApp> {
                 ),
                 // Add CategoriesWidget here if available
                 //categories
+                // Categories widget
+
                 const CategoriesWidget(),
+                // Container with text "Best Selling"
+
                 Container(
                   alignment: Alignment.centerLeft,
                   margin: const EdgeInsets.symmetric(
@@ -122,6 +127,17 @@ class _ShoppingAppState extends State<ShoppingApp> {
                 const ItemWidget(),
               ],
             ),
+          ),
+        ],
+      ),
+      bottomNavigationBar: CurvedNavigationBar(
+        // Navigation bar items
+
+        items: <Widget>[
+          Icon(
+            Icons.home,
+            size: 30,
+            color: Colors.white,
           ),
         ],
       ),
