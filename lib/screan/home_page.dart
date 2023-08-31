@@ -21,7 +21,7 @@ class _ShoppingAppState extends State<ShoppingApp> {
         children: <Widget>[
           const HomePageAppBar(), // Display the custom app bar
           Container(
-            height: 500,
+            // height: 500,
             padding: const EdgeInsets.only(
               top: 15,
             ),
@@ -100,6 +100,24 @@ class _ShoppingAppState extends State<ShoppingApp> {
                 // Add CategoriesWidget here if available
                 //categories
                 const CategoriesWidget(),
+                Container(
+                  alignment: Alignment.centerLeft,
+                  margin: const EdgeInsets.symmetric(
+                    vertical: 20,
+                    horizontal: 10,
+                  ),
+                  child: const Text(
+                    'Best Selling',
+                    style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                      color: Color(
+                        0xFF4C53A5,
+                      ),
+                    ),
+                  ),
+                ),
+                //Item widget
               ],
             ),
           ),
