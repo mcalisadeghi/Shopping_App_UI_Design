@@ -81,11 +81,11 @@ class _ShoppingAppState extends State<ShoppingApp> {
                 ),
                 Container(
                   alignment: Alignment.centerLeft,
-                  margin: EdgeInsets.symmetric(
+                  margin: const EdgeInsets.symmetric(
                     vertical: 20,
                     horizontal: 10,
                   ),
-                  child: Text(
+                  child: const Text(
                     'Categories', // Display the section title
                     style: TextStyle(
                       fontSize: 25,
