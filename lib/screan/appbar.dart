@@ -61,7 +61,12 @@ class _HomePageAppBarState extends State<HomePageAppBar> {
               ),
             ),
             child: InkWell(
-              onTap: () {},
+              onTap: () {
+                Navigator.pushNamed(
+                  context,
+                  "cartPage",
+                );
+              },
               child: const Icon(
                 Icons.shopping_bag_outlined, // Display the shopping bag icon
                 size: 32,

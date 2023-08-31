@@ -1,4 +1,5 @@
 // Import necessary packages
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/screan/appbar.dart';
 import 'package:flutter_application_1/widgets/CategoriesWidget.dart';
@@ -131,11 +132,26 @@ class _ShoppingAppState extends State<ShoppingApp> {
         ],
       ),
       bottomNavigationBar: CurvedNavigationBar(
+        onTap: (index) {}, backgroundColor: Colors.transparent,
+        height: 70,
+        color: const Color(
+          0xFF4C53A5,
+        ),
         // Navigation bar items
 
-        items: <Widget>[
+        items: const <Widget>[
           Icon(
             Icons.home,
+            size: 30,
+            color: Colors.white,
+          ),
+          Icon(
+            CupertinoIcons.cart_fill,
+            size: 30,
+            color: Colors.white,
+          ),
+          Icon(
+            Icons.list,
             size: 30,
             color: Colors.white,
           ),
