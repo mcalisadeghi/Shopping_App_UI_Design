@@ -1,6 +1,8 @@
+// Import necessary packages
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/screan/appbar.dart';
+import 'package:flutter_application_1/screan/appbar.dart'; // Import your custom app bar
 
+// Define a stateful widget for the shopping app
 class ShoppingApp extends StatefulWidget {
   const ShoppingApp({super.key});
 
@@ -8,18 +10,15 @@ class ShoppingApp extends StatefulWidget {
   State<ShoppingApp> createState() => _ShoppingAppState();
 }
 
+// Define the state for the ShoppingApp widget
 class _ShoppingAppState extends State<ShoppingApp> {
   @override
   Widget build(BuildContext context) {
+    // Construct the main scaffold for the shopping app
     return Scaffold(
-      //     body: Column(
-      //   children: [
-      //     Container(child: Text('ddd')),
-      //   ],
-      // )
       body: ListView(
         children: <Widget>[
-          const HomePageAppBar(),
+          const HomePageAppBar(), // Display the custom app bar
           Container(
             height: 500,
             padding: const EdgeInsets.only(
@@ -87,7 +86,7 @@ class _ShoppingAppState extends State<ShoppingApp> {
                     horizontal: 10,
                   ),
                   child: Text(
-                    'Categories',
+                    'Categories', // Display the section title
                     style: TextStyle(
                       fontSize: 25,
                       fontWeight: FontWeight.bold,
@@ -97,7 +96,9 @@ class _ShoppingAppState extends State<ShoppingApp> {
                     ),
                   ),
                 ),
+                // Add CategoriesWidget here if available
                 //categories
+                // CategoriesWidget(),
               ],
             ),
           ),
