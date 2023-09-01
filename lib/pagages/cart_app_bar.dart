@@ -13,7 +13,7 @@ class _CartAppBarState extends State<CartAppBar> {
   Widget build(BuildContext context) {
     return Container(
       color: Colors.white,
-      padding: EdgeInsets.all(
+      padding: const EdgeInsets.all(
         25,
       ),
       child: Row(

@@ -1,7 +1,7 @@
 // Import necessary packages
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/pagages/CartAppBar.dart';
-import 'package:flutter_application_1/widgets/CartItemSamples.dart';
+import 'package:flutter_application_1/pagages/cart_app_bar.dart';
+import 'package:flutter_application_1/widgets/cart_item_samples.dart';
 import 'package:flutter_application_1/widgets/cardbottomnav.dart';
 
 class CartPage extends StatefulWidget {

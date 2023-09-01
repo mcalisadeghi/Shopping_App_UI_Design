@@ -2,7 +2,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/screan/appbar.dart';
-import 'package:flutter_application_1/widgets/CategoriesWidget.dart';
+import 'package:flutter_application_1/widgets/categories_widget.dart';
 import 'package:flutter_application_1/widgets/item_widget.dart'; // Import your custom app bar
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 
