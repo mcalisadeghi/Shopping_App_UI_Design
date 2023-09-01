@@ -103,7 +103,6 @@ class _ShoppingAppState extends State<ShoppingApp> {
                 // Add CategoriesWidget here if available
                 //categories
                 // Categories widget
-
                 const CategoriesWidget(),
                 // Container with text "Best Selling"
 
@@ -132,7 +131,8 @@ class _ShoppingAppState extends State<ShoppingApp> {
         ],
       ),
       bottomNavigationBar: CurvedNavigationBar(
-        onTap: (index) {}, backgroundColor: Colors.transparent,
+        onTap: (index) {},
+        backgroundColor: Colors.transparent,
         height: 70,
         color: const Color(
           0xFF4C53A5,

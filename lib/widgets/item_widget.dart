@@ -11,7 +11,7 @@ class ItemWidget extends StatelessWidget {
       physics: const NeverScrollableScrollPhysics(),
       shrinkWrap: true,
       crossAxisCount: 2,
-      children: [
+      children: <Widget>[
         for (int i = 1; i < 8; i++)
           Container(
             padding: const EdgeInsets.only(
@@ -30,7 +30,7 @@ class ItemWidget extends StatelessWidget {
               ),
             ),
             child: Column(
-              children: [
+              children: <Widget>[
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [

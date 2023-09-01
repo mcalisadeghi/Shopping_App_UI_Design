@@ -10,6 +10,7 @@ class CardBottomNav extends StatefulWidget {
 class _CardBottomNavState extends State<CardBottomNav> {
   @override
   Widget build(BuildContext context) {
+    // This widget represents the bottom navigation bar of a card page.
     return BottomAppBar(
       child: Container(
         padding: const EdgeInsets.symmetric(
@@ -65,7 +66,7 @@ class _CardBottomNavState extends State<CardBottomNav> {
                   fontWeight: FontWeight.bold,
                 ),
               ),
-            )
+            ),
           ],
         ),
       ),

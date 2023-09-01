@@ -1,12 +1,20 @@
+// Import necessary packages
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:clippy_flutter/clippy_flutter.dart';
-import 'package:flutter_application_1/widgets/ItemBottomNavBar.dart';
+// Import custom widgets and classes
+import 'package:flutter_application_1/widgets/item_bottom_nav_bar.dart';
 import 'package:flutter_application_1/widgets/item_appbar.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 
-class ItemPages extends StatelessWidget {
-  ItemPages({super.key});
+class ItemPages extends StatefulWidget {
+  const ItemPages({super.key});
+
+  @override
+  State<ItemPages> createState() => _ItemPagesState();
+}
+
+class _ItemPagesState extends State<ItemPages> {
   List<Color> colorsnext = [
     Colors.red,
     Colors.green,
@@ -14,19 +22,23 @@ class ItemPages extends StatelessWidget {
     Colors.indigo,
     Colors.orange,
   ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      // Set the background color of the scaffold
       backgroundColor: const Color(
         0xFFEDECF2,
       ),
       body: ListView(
         children: <Widget>[
+          // Display the ItemAppbar widget at the top of the page.
           const ItemAppbar(),
           Padding(
             padding: const EdgeInsets.all(
               16,
             ),
+            // Display an image from assets.
             child: Image.asset(
               'assets/images/1.png',
               height: 300,
@@ -38,6 +50,7 @@ class ItemPages extends StatelessWidget {
             height: 30,
             child: Container(
               width: double.infinity,
+              // Set the container's background color.
               color: Colors.white,
               child: Padding(
                 padding: const EdgeInsets.symmetric(
@@ -51,7 +64,7 @@ class ItemPages extends StatelessWidget {
                         bottom: 20,
                       ),
                       child: Row(
-                        children: [
+                        children: <Widget>[
                           Text(
                             'Product Title',
                             style: TextStyle(
@@ -71,7 +84,7 @@ class ItemPages extends StatelessWidget {
                       ),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
+                        children: <Widget>[
                           RatingBar.builder(
                             initialRating: 4,
                             minRating: 1,
@@ -100,7 +113,7 @@ class ItemPages extends StatelessWidget {
                                   borderRadius: BorderRadius.circular(
                                     20,
                                   ),
-                                  boxShadow: [
+                                  boxShadow: <BoxShadow>[
                                     BoxShadow(
                                       color: Colors.grey.withOpacity(
                                         0.5,
@@ -143,7 +156,7 @@ class ItemPages extends StatelessWidget {
                                   borderRadius: BorderRadius.circular(
                                     20,
                                   ),
-                                  boxShadow: [
+                                  boxShadow: <BoxShadow>[
                                     BoxShadow(
                                       color: Colors.grey.withOpacity(
                                         0.5,
@@ -154,7 +167,7 @@ class ItemPages extends StatelessWidget {
                                         0,
                                         3,
                                       ),
-                                    )
+                                    ),
                                   ],
                                 ),
                                 child: const Icon(
@@ -187,7 +200,7 @@ class ItemPages extends StatelessWidget {
                         vertical: 8,
                       ),
                       child: Row(
-                        children: [
+                        children: <Widget>[
                           const Text(
                             'Size:',
                             style: TextStyle(
@@ -202,7 +215,7 @@ class ItemPages extends StatelessWidget {
                             width: 10,
                           ),
                           Row(
-                            children: [
+                            children: <Widget>[
                               for (int i = 0; i < 5; i++)
                                 Container(
                                   height: 30,
@@ -216,7 +229,7 @@ class ItemPages extends StatelessWidget {
                                     borderRadius: BorderRadius.circular(
                                       30,
                                     ),
-                                    boxShadow: [
+                                    boxShadow: <BoxShadow>[
                                       BoxShadow(
                                         color: Colors.grey.withOpacity(
                                           0.5,
@@ -247,7 +260,7 @@ class ItemPages extends StatelessWidget {
                         vertical: 8,
                       ),
                       child: Row(
-                        children: [
+                        children: <Widget>[
                           const Text(
                             'Color:',
                             style: TextStyle(
@@ -262,7 +275,7 @@ class ItemPages extends StatelessWidget {
                             width: 10,
                           ),
                           Row(
-                            children: [
+                            children: <Widget>[
                               for (int i = 0; i < 5; i++)
                                 Container(
                                   height: 30,
@@ -272,11 +285,12 @@ class ItemPages extends StatelessWidget {
                                     horizontal: 5,
                                   ),
                                   decoration: BoxDecoration(
-                                    color: colorsnext[i],
+                                    color:
+                                        colorsnext[i], // Display color options.
                                     borderRadius: BorderRadius.circular(
                                       30,
                                     ),
-                                    boxShadow: [
+                                    boxShadow: <BoxShadow>[
                                       BoxShadow(
                                         color: Colors.grey.withOpacity(
                                           0.5,
@@ -299,7 +313,8 @@ class ItemPages extends StatelessWidget {
           ),
         ],
       ),
-      bottomNavigationBar: ItemBottomNavBar(),
+      // Display the ItemBottomNavBar widget at the bottom of the page.
+      bottomNavigationBar: const ItemBottomNavBar(),
     );
   }
 }

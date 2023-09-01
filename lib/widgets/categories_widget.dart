@@ -9,7 +9,7 @@ class CategoriesWidget extends StatelessWidget {
     return SingleChildScrollView(
       scrollDirection: Axis.horizontal,
       child: Row(
-        children: [
+        children: <Widget>[
           for (int i = 1; i < 8; i++)
             Container(
               margin: const EdgeInsets.symmetric(
@@ -26,7 +26,7 @@ class CategoriesWidget extends StatelessWidget {
                   )),
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.center,
-                children: [
+                children: <Widget>[
                   Image.asset(
                     'assets/images/$i.png',
                     width: 40,

@@ -95,7 +95,7 @@ class _CartItemSamplesState extends State<CartItemSamples> {
                         color: Colors.red,
                       ),
                       Row(
-                        children: [
+                        children: <Widget>[
                           Container(
                             padding: const EdgeInsets.all(
                               5,
@@ -105,7 +105,7 @@ class _CartItemSamplesState extends State<CartItemSamples> {
                               borderRadius: BorderRadius.circular(
                                 20,
                               ),
-                              boxShadow: [
+                              boxShadow: <BoxShadow>[
                                 BoxShadow(
                                   color: Colors.grey.withOpacity(
                                     0.5,
@@ -144,7 +144,7 @@ class _CartItemSamplesState extends State<CartItemSamples> {
                               borderRadius: BorderRadius.circular(
                                 20,
                               ),
-                              boxShadow: [
+                              boxShadow: <BoxShadow>[
                                 BoxShadow(
                                   color: Colors.grey.withOpacity(
                                     0.5,

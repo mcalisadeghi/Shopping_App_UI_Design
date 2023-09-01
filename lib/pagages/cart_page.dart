@@ -1,5 +1,6 @@
 // Import necessary packages
 import 'package:flutter/material.dart';
+// Import custom widgets and classes
 import 'package:flutter_application_1/pagages/cart_app_bar.dart';
 import 'package:flutter_application_1/widgets/cart_item_samples.dart';
 import 'package:flutter_application_1/widgets/cardbottomnav.dart';
@@ -17,8 +18,10 @@ class _CartPageState extends State<CartPage> {
     return Scaffold(
       body: ListView(
         children: <Widget>[
+          // Display the CartAppBar widget at the top of the page.
           const CartAppBar(),
           Container(
+            // Set the container's height.
             height: 700,
             padding: const EdgeInsets.only(
               top: 15,
@@ -38,6 +41,7 @@ class _CartPageState extends State<CartPage> {
             ),
             child: Column(
               children: <Widget>[
+                // Display the CartItemSamples widget.
                 const CartItemSamples(),
                 Container(
                   margin: const EdgeInsets.symmetric(
@@ -67,6 +71,7 @@ class _CartPageState extends State<CartPage> {
                         padding: EdgeInsets.symmetric(
                           horizontal: 10,
                         ),
+                        // Display the text 'Add coupon code'.
                         child: Text(
                           'Add coupn code',
                           style: TextStyle(
@@ -86,6 +91,7 @@ class _CartPageState extends State<CartPage> {
           )
         ],
       ),
+      // Display the CardBottomNav widget at the bottom of the page.
       bottomNavigationBar: const CardBottomNav(),
     );
   }

@@ -18,7 +18,7 @@ class _ItemAppbarState extends State<ItemAppbar> {
         25,
       ),
       child: Row(
-        children: [
+        children: <Widget>[
           InkWell(
             onTap: () {
               // Navigate back when this icon is tapped.
@@ -53,7 +53,7 @@ class _ItemAppbarState extends State<ItemAppbar> {
             size: 30,
             // Display a red heart icon.
             color: Colors.red,
-          )
+          ),
         ],
       ),
     );
