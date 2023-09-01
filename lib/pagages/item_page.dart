@@ -1,6 +1,5 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/widgets/ItemAppbar.dart';
+import 'package:flutter_application_1/widgets/itemAppbar.dart';
 
 class ItemPages extends StatefulWidget {
   const ItemPages({super.key});

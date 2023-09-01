@@ -1,6 +1,6 @@
 // Import necessary packages
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/pagages/ItemPage.dart';
+import 'package:flutter_application_1/pagages/item_page.dart';
 import 'package:flutter_application_1/pagages/cartPage.dart';
 import 'package:flutter_application_1/screan/home_page.dart'; // Import your custom screen
 
