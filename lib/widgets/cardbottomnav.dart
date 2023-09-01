@@ -13,10 +13,10 @@ class _CardBottomNavState extends State<CardBottomNav> {
     return BottomAppBar(
       child: Container(
         padding: const EdgeInsets.symmetric(
-          horizontal: 20,
-          vertical: 15,
+          horizontal: 20, //20
+          // vertical: 5, //15
         ),
-        height: 130,
+        // height: 100,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: <Widget>[
@@ -29,7 +29,7 @@ class _CardBottomNavState extends State<CardBottomNav> {
                     color: Color(
                       0xFF4C53A5,
                     ),
-                    fontSize: 22,
+                    fontSize: 18, //22
                     fontWeight: FontWeight.bold,
                   ),
                 ),
@@ -39,7 +39,7 @@ class _CardBottomNavState extends State<CardBottomNav> {
                     color: Color(
                       0xFF4C53A5,
                     ),
-                    fontSize: 25,
+                    fontSize: 20, //25
                     fontWeight: FontWeight.bold,
                   ),
                 ),
@@ -47,14 +47,14 @@ class _CardBottomNavState extends State<CardBottomNav> {
             ),
             Container(
               alignment: Alignment.center,
-              height: 50,
-              width: double.infinity,
+              height: 25,
+              // width: double.infinity,
               decoration: BoxDecoration(
                 color: const Color(
-                  0xC53A5,
+                  0xFF4C53A5,
                 ),
                 borderRadius: BorderRadius.circular(
-                  20,
+                  30,
                 ),
               ),
               child: const Text(

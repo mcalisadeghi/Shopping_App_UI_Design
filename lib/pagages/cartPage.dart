@@ -77,7 +77,7 @@ class _CartPageState extends State<CartPage> {
                             fontWeight: FontWeight.bold,
                           ),
                         ),
-                      )
+                      ),
                     ],
                   ),
                 ),
