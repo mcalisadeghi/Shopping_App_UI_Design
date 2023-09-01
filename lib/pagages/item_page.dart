@@ -166,6 +166,40 @@ class _ItemPagesState extends State<ItemPages> {
                         ],
                       ),
                     ),
+                    Padding(
+                      padding: EdgeInsets.symmetric(
+                        vertical: 12,
+                      ),
+                      child: Text(
+                        'this is... details dectiption...',
+                        style: TextStyle(
+                          fontSize: 17,
+                          color: Color(
+                            0xFF4C53A5,
+                          ),
+                        ),
+                        textAlign: TextAlign.justify,
+                      ),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.symmetric(
+                        vertical: 8,
+                      ),
+                      child: Row(
+                        children: [
+                          Text(
+                            'Size:',
+                            style: TextStyle(
+                              fontSize: 18,
+                              color: Color(
+                                0xFF4C53A5,
+                              ),
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
                   ],
                 ),
               ),
