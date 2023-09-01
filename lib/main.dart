@@ -30,7 +30,7 @@ class MyApp extends StatelessWidget {
         "/": (context) =>
             const ShoppingApp(), // Define the default route to the ShoppingApp
         "cartPage": (context) => const CartPage(),
-        "itemPage": (context) => const ItemPages(),
+        "itemPage": (context) => ItemPages(),
       },
     );
   }

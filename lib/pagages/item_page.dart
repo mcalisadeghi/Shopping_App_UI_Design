@@ -2,17 +2,17 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:clippy_flutter/clippy_flutter.dart';
 import 'package:flutter_application_1/widgets/item_appbar.dart';
-
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 
-class ItemPages extends StatefulWidget {
-  const ItemPages({super.key});
-
-  @override
-  State<ItemPages> createState() => _ItemPagesState();
-}
-
-class _ItemPagesState extends State<ItemPages> {
+class ItemPages extends StatelessWidget {
+  ItemPages({super.key});
+  List<Color> colorsnext = [
+    Colors.red,
+    Colors.green,
+    Colors.blue,
+    Colors.indigo,
+    Colors.orange,
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -166,7 +166,7 @@ class _ItemPagesState extends State<ItemPages> {
                         ],
                       ),
                     ),
-                    Padding(
+                    const Padding(
                       padding: EdgeInsets.symmetric(
                         vertical: 12,
                       ),
@@ -182,12 +182,12 @@ class _ItemPagesState extends State<ItemPages> {
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsets.symmetric(
+                      padding: const EdgeInsets.symmetric(
                         vertical: 8,
                       ),
                       child: Row(
                         children: [
-                          Text(
+                          const Text(
                             'Size:',
                             style: TextStyle(
                               fontSize: 18,
@@ -196,6 +196,97 @@ class _ItemPagesState extends State<ItemPages> {
                               ),
                               fontWeight: FontWeight.bold,
                             ),
+                          ),
+                          const SizedBox(
+                            width: 10,
+                          ),
+                          Row(
+                            children: [
+                              for (int i = 0; i < 5; i++)
+                                Container(
+                                  height: 30,
+                                  width: 30,
+                                  alignment: Alignment.center,
+                                  margin: const EdgeInsets.symmetric(
+                                    horizontal: 5,
+                                  ),
+                                  decoration: BoxDecoration(
+                                    color: Colors.white,
+                                    borderRadius: BorderRadius.circular(
+                                      30,
+                                    ),
+                                    boxShadow: [
+                                      BoxShadow(
+                                        color: Colors.grey.withOpacity(
+                                          0.5,
+                                        ),
+                                        spreadRadius: 2,
+                                        blurRadius: 8,
+                                      ),
+                                    ],
+                                  ),
+                                  child: Text(
+                                    i.toString(),
+                                    style: const TextStyle(
+                                      fontSize: 18,
+                                      fontWeight: FontWeight.bold,
+                                      color: Color(
+                                        0xFF4C53A5,
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(
+                        vertical: 8,
+                      ),
+                      child: Row(
+                        children: [
+                          const Text(
+                            'Color:',
+                            style: TextStyle(
+                              fontSize: 18,
+                              color: Color(
+                                0xFF4C53A5,
+                              ),
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          const SizedBox(
+                            width: 10,
+                          ),
+                          Row(
+                            children: [
+                              for (int i = 0; i < 5; i++)
+                                Container(
+                                  height: 30,
+                                  width: 30,
+                                  alignment: Alignment.center,
+                                  margin: const EdgeInsets.symmetric(
+                                    horizontal: 5,
+                                  ),
+                                  decoration: BoxDecoration(
+                                    color: colorsnext[i],
+                                    borderRadius: BorderRadius.circular(
+                                      30,
+                                    ),
+                                    boxShadow: [
+                                      BoxShadow(
+                                        color: Colors.grey.withOpacity(
+                                          0.5,
+                                        ),
+                                        spreadRadius: 2,
+                                        blurRadius: 8,
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                            ],
                           ),
                         ],
                       ),
