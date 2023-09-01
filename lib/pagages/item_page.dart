@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:clippy_flutter/clippy_flutter.dart';
+import 'package:flutter_application_1/widgets/ItemBottomNavBar.dart';
 import 'package:flutter_application_1/widgets/item_appbar.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 
@@ -298,6 +299,7 @@ class ItemPages extends StatelessWidget {
           ),
         ],
       ),
+      bottomNavigationBar: ItemBottomNavBar(),
     );
   }
 }
